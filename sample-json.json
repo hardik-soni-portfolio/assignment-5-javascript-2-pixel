@@ -1,0 +1,23 @@
+[
+{
+"content": "Lorem ipsum d Lorem ipsum dolor sit amet, consectetur amet, Lorem ipsum dolor",
+"isComplete": false,
+"author": "John Doe",
+"date": "10-08-2018",
+"title": "Grocery list"
+},
+{
+"content": "Lorem ipsum d Lorem ipsum dolor sit amet, consectetur amet, Lorem ipsum dolor",
+"isComplete": false,
+"author": "John Doe",
+"date": "10-08-2018",
+"title": "Shopping list"
+},
+{
+"content": "Lorem ipsum d Lorem ipsum dolor sit amet, consectetur amet, Lorem ipsum dolor",
+"isComplete": false,
+"author": "John Doe",
+"date": "10-08-2018",
+"title": "Assignment list"
+}
+]

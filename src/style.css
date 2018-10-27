@@ -20,7 +20,7 @@ body {
     }
 
 #addNewToWork {
-    background-image: url(resources/icons8-plus-64.png);
+    background-image: url(/resources/icons8-plus-64.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
@@ -54,7 +54,7 @@ body {
     }
 
 input[type=button] {
-        background-image: url(resources/close-cross-1.png);
+        background-image: url(/resources/close-cross-1.png);
         background-repeat: no-repeat;
         background-color: transparent;
         background-size: contain;
@@ -71,4 +71,6 @@ input[type=button] {
 
 .divItemClass{
     border: none;
+    float:left;
+    display:inline-block;
 }

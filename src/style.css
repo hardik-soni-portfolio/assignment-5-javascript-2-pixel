@@ -20,14 +20,15 @@ body {
     }
 
 #addNewToWork {
-    background-image: url(/resources/icons8-plus-64.png);
+    background-image: url(/resources/plus-sign.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
     align-self: center;
     border:none;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    background-color: #fcf9f9;
 }
 
 #containerToWork {
@@ -39,8 +40,9 @@ body {
 
 #actionsToWork {
     width: 80%;
-    margin: auto;
+    margin: 1em auto 1em auto;
     padding: 1px 10px 1px 10px;
+    background-color: #fcf9f9;
     align-items: stretch;
     display: grid;
     grid-template-columns: 1fr 1fr 5fr 0.5fr 0.5fr ;
@@ -51,6 +53,7 @@ body {
         border: none;
         border-bottom: ridge;
         align-self: center;
+        background-color: #fcf9f9;
     }
 
 input[type=button] {
@@ -60,6 +63,10 @@ input[type=button] {
         background-size: contain;
         background-position: center;
         border: none;
+        float:right;
+        position: relative;
+        top: -20%;
+        right: -1.5%;
     }
 
 #contToWork {
@@ -71,6 +78,35 @@ input[type=button] {
 
 .divItemClass{
     border: none;
-    float:left;
-    display:inline-block;
+    display: block;
+    padding: 0em 1em 0em 1em;
+}
+
+.titleClass{
+    font-weight: 900;
+    text-transform: uppercase;
+    border-bottom: ridge;
+}
+
+.contentClass{
+    word-break: break-all;
+}
+
+.authorClass{
+    font-style: italic;
+    font-size: small;
+    margin: 0 auto 0 auto;
+} 
+
+.dateClass{
+    font-style: italic;
+    font-size: small;
+    margin: auto auto 0 auto;
+} 
+
+.divItemClass input[type=checkbox] {
+    float:right;
+    position: relative;
+    bottom: 5%;
+    right: -1.5%;
 }

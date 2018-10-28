@@ -45,9 +45,10 @@ body {
     background-color: #fcf9f9;
     align-items: stretch;
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr 0.5fr 0.5fr ;
+    grid-template-columns: 1fr 5fr 0.5fr ;
     grid-column-gap: 0.5em;
 }
+
 
     #actionsToWork input[type=text], input[type=date]  {
         border: none;
@@ -71,7 +72,7 @@ input[type=button] {
 
 #contToWork {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: 23% 23% 23% 23%;
     grid-row-gap: 1em;
     grid-column-gap: 1em;
 }
@@ -109,4 +110,15 @@ input[type=button] {
     position: relative;
     bottom: 5%;
     right: -1.5%;
+}
+#contToWork div{
+    min-width: 200px;
+}
+
+#userName{
+    position: absolute;
+    top: 2.5em;
+    right: 1em;
+    font-size: 20px;
+
 }

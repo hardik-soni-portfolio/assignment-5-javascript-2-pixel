@@ -1,8 +1,9 @@
 let stuff = [];
 
 addItemToList = () => {
-    stuff.push({ author: document.getElementById("authorNewToWork").value, title: document.getElementById("titleNewToWork").value, content: document.getElementById("enterNewToWork").value, date: document.getElementById("dateNewToWork").value, isComplete: false });
+    stuff.push({ author: "John Doe", title: document.getElementById("titleNewToWork").value, content: document.getElementById("enterNewToWork").value, isComplete: false });
     document.getElementById("enterNewToWork").value =""; 
+    document.getElementById("titleNewToWork").value = "";
     buildItemList(); 
 }
 
@@ -61,7 +62,15 @@ buildItemList = () => {
         let authorItem = createElement("p", i, "authorClass", s.author);
         let titleItem = createElement("p", i, "titleClass", s.title);
         let paraItem = createElement("p", i, "contentClass", s.content);
-        let dateItem = createElement("p", i, "dateClass", s.date);
+
+        let today = new Date();
+        let date = today.getDate();
+        let month = today.getMonth() + 1;
+        let year = today.getFullYear();
+
+        today = month + "/" + date + "/" + year;
+
+        let dateItem = createElement("p", i, "dateClass", today);
 
         if (stuff[i].isComplete) {
             toWorkCheck.checked = stuff[i].isComplete;

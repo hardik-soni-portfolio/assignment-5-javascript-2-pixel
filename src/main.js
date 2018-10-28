@@ -1,12 +1,13 @@
 let stuff = [];
 
+//add data to stuff array and call buildItemList function
 addItemToList = () => {
     stuff.push({ author: "John Doe", title: document.getElementById("titleNewToWork").value, content: document.getElementById("enterNewToWork").value, isComplete: false });
     document.getElementById("enterNewToWork").value =""; 
     document.getElementById("titleNewToWork").value = "";
     buildItemList(); 
 }
-
+//fetch data from JSON file
 fetch ('./resources/sample.json')
     .then(response => response.json())
     .then(data => {
@@ -15,7 +16,7 @@ fetch ('./resources/sample.json')
         buildItemList();
     })
     
-
+//function to create elements based on  arguments
 createElement =(element, id, className, innerText)=>{
             let item = document.createElement(element);
             item.id = id;
@@ -35,7 +36,7 @@ checkEvent = (e) =>{
             }
             buildItemList();
         }
-
+//generate UI for on every add item event
 buildItemList = () => {
 
     let prevDiv = document.getElementById("contToWork");
@@ -103,6 +104,7 @@ buildItemList = () => {
     divCont.appendChild(divNew);
 }
 
+//remove item from list
 removeItemFromList = (i) => {
     stuff.splice(i, 1);
     buildItemList();
